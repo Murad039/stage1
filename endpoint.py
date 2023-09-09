@@ -19,8 +19,8 @@ def get_info():
     utc_time = utc_now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     #github repo information
-    github_repo= 'https://github.com/Murad039/endpoint'
-    github_file = 'https://github.com/Murad039/endpoint/blob/main/endpoint.py'
+    github_repo= 'https://github.com/Murad039/stage1'
+    github_file = 'https://github.com/Murad039/stage1/edit/main/endpoint.py'
 
     #response data
     response_data = {
@@ -35,17 +35,4 @@ def get_info():
     return jsonify(response_data)
 
     if __name__ == '__main__':
-        app.run(host= '0.0.0.0', debug = True, port = 5000 ), 200 
-
-
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug= True), 200
+        app.run(host= '0.0.0.0', debug = True, port = 5000 )
